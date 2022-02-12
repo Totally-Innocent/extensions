@@ -1,6 +1,6 @@
 -- {"id":573,"ver":"2.0.0","libVer":"1.0.0","author":"Doomsdayrs","dep":["url>=1.0.0"]}
 
-local baseURL = "https://www.mtlnovel.com"
+local baseURL = "https://mtlreader.com"
 local settings = { [1] = 0 }
 
 local ORDER_BYS_INT = { [0] = "date",[1] = "name",[2] = "rating",[3] = "view" }
@@ -13,7 +13,7 @@ local STATUES_INT = { [0] = "all",[1] = "completed",[2] = "ongoing" }
 local STATUSES_KEY = 104
 
 local function shrinkURL(url)
-	return url:gsub("^.-mtlnovel%.com", "")
+	return url:gsub("^.-mtlreader%.com", "")
 end
 
 local function expandURL(url)
@@ -117,9 +117,9 @@ end
 
 return {
 	id = 573,
-	name = "MTLNovel",
+	name = "MTLReader",
 	baseURL = baseURL,
-	imageURL = "https://github.com/shosetsuorg/extensions/raw/dev/icons/MTLNovel.png",
+	imageURL = "https://mtlreader.com/img/brand/logo_100x100.png",
 	hasSearch = true,
 	chapterType = ChapterType.HTML,
 
